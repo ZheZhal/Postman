@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "d7d2ee00-12ec-4ed7-91da-eff899529fea",
+		"name": "SOAP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23936925"
+	},
+	"item": [
+		{
+			"name": "doRegister",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "text/xml",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <doRegister xmlns=\"http://foo.bar/wrappersoapserver\">\r\n            <email>1qqwes23131sdf@mail.ru</email>\r\n            <name>qwe</name>\r\n            <password>zxc</password>\r\n        </doRegister>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/soap/WrapperSoapServer.php",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"soap",
+						"WrapperSoapServer.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "doLogin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <doLogin xmlns=\"http://foo.bar/wrappersoapserver\">\r\n            <email>1qqwes23131sdf@mail.ru</email>\r\n            <password>zxc</password>\r\n        </doLogin>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/soap/WrapperSoapServer.php",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"soap",
+						"WrapperSoapServer.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <getUser xmlns=\"http://foo.bar/wrappersoapserver\">\r\n            <email>1qqwes23131sdf@mail.ru</email>\r\n        </getUser>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/soap/WrapperSoapServer.php",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"soap",
+						"WrapperSoapServer.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <CreateTask xmlns=\"http://foo.bar/wrappersoapserver\">\r\n            <task_title>zadacha</task_title>\r\n            <task_description>delay krasivo</task_description>\r\n            <email_owner>1qqwes23131sdf@mail.ru</email_owner>\r\n            <email_assign>1qqwes23131sdf@mail.ru</email_assign>\r\n        </CreateTask>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/soap/WrapperSoapServer.php",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"soap",
+						"WrapperSoapServer.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserFull",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <getUserFull xmlns=\"http://foo.bar/wrappersoapserver\">\r\n            <email>1qqwes23131sdf@mail.ru</email>\r\n        </getUserFull>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/soap/WrapperSoapServer.php",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"soap",
+						"WrapperSoapServer.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateTask",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "<Envelope xmlns=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n    <Body>\r\n        <UpdateTask xmlns=\"http://foo.bar/wrappersoapserver\">\r\n            <email_owner>1qqwes23131sdf@mail.ru</email_owner>\r\n            <email_assign>1qqwes23131sdf@mail.ru</email_assign>\r\n            <id_task>99</id_task>\r\n            <task_title>zadacha2</task_title>\r\n            <task_description>jestko</task_description>\r\n        </UpdateTask>\r\n    </Body>\r\n</Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/soap/WrapperSoapServer.php",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"soap",
+						"WrapperSoapServer.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
